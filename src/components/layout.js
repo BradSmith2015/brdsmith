@@ -14,11 +14,21 @@ export default ({ children }) => (
         </h1>
       </div>
       <div>
-        <a href="https://github.com/BradSmith2015">
-          <FontAwesomeIcon icon={["fab", "github"]} size="2x" color="white" />
+        <a alt="My Github" href="https://github.com/BradSmith2015">
+          <FontAwesomeIcon
+            alt="github"
+            icon={["fab", "github"]}
+            size="2x"
+            color="white"
+          />
         </a>
-        <a href="https://www.linkedin.com/in/brdsmith/">
-          <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" color="white" />
+        <a alt="My LinkedIn" href="https://www.linkedin.com/in/brdsmith/">
+          <FontAwesomeIcon
+            alt="linkedin"
+            icon={["fab", "linkedin"]}
+            size="2x"
+            color="white"
+          />
         </a>
       </div>
     </footer>

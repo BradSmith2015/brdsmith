@@ -13,7 +13,7 @@ export default () => (
   <div>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Resume</title>
+      <title htmlAttributes={[{ lang: "en" }]}>Resume</title>
       <link rel="canonical" href="http://www.brdsmith.com/resume " />
       <meta name="description" content="Brad Smith's Resume" />
     </Helmet>

@@ -3,7 +3,7 @@ import "../styles/global.css"
 import fairyGatesTheme from "typography-theme-fairy-gates"
 fairyGatesTheme.overrideStyles = () => ({
   p: {
-    color: "#808080		",
+    color: "#696969",
   },
   a: {
     textDecoration: "none",

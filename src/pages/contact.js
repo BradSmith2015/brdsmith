@@ -7,7 +7,7 @@ export default () => (
   <div>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Contact</title>
+      <title htmlAttributes={[{ lang: "en" }]}>Contact</title>
       <link rel="canonical" href="http://www.brdsmith.com/resume " />
       <meta name="description" content="Brad Smith's Contact Info" />
     </Helmet>
@@ -22,8 +22,10 @@ export default () => (
         <h5>Bradsmith2015(at)gmail.com</h5>
         <h1>or</h1>
         <h5>
-          Connect with me on LinkedIn{" "}
-          <a href="https://www.linkedin.com/in/brdsmith/">here</a>
+          {" "}
+          <a href="https://www.linkedin.com/in/brdsmith/">
+            Connect with me on LinkedIn
+          </a>
         </h5>
       </div>
     </Layout>

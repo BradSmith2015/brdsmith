@@ -9,7 +9,7 @@ import aboutStyles from "../styles/about.mod.scss"
 
 export default ({ data }) => (
   <div>
-    <Helmet>
+    <Helmet htmlAttributes={[{ lang: "en" }]}>
       <meta charSet="utf-8" />
       <title>About</title>
       <link rel="canonical" href="http://www.brdsmith.com/resume " />

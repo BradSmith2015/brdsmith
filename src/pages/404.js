@@ -15,6 +15,7 @@ export default () => (
     <img
       style={{ width: "40%", height: "auto", margin: "auto" }}
       src={"/images/astro_404.png"}
+      alt="its an astronaut"
     />
     <h1>404</h1>
     <h2>Page Not Found</h2>
