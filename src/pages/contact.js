@@ -1,9 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
 import contactStyles from "../styles/contact.mod.scss"
+import { Helmet } from "react-helmet"
 
 export default () => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Contact</title>
+      <link rel="canonical" href="http://www.brdsmith.com/resume " />
+      <meta name="description" content="Brad Smith's Contact Info" />
+    </Helmet>
     <Layout>
       <div className={contactStyles.contactContainer}>
         {" "}

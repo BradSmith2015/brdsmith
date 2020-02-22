@@ -4,10 +4,16 @@ import ProjectPost from "../components/projectPost"
 import indexStyles from "../styles/index.mod.scss"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 export default ({ data }) => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home</title>
+        <link rel="canonical" href="http://www.brdsmith.com " />
+      </Helmet>
       <Layout>
         <div className={indexStyles.heroContainer}>
           <div className={indexStyles.heroText}>

@@ -1,10 +1,20 @@
 import React from "react"
+import Img from "gatsby-image"
+
+import { graphql } from "gatsby"
+import { Helmet } from "react-helmet"
+
 import Layout from "../components/layout"
 import aboutStyles from "../styles/about.mod.scss"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
+
 export default ({ data }) => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>About</title>
+      <link rel="canonical" href="http://www.brdsmith.com/resume " />
+      <meta name="description" content="A page about Brad Smith" />
+    </Helmet>
     <Layout>
       <div className={aboutStyles.AboutHeroContainer}>
         <div className={aboutStyles.col}>

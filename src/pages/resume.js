@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import resumeStyles from "../styles/resume.mod.scss"
+import { Helmet } from "react-helmet"
+
 const TableBulletPoint = ({ children }) => (
   <td>
     <span>&#x25A1;</span>
@@ -9,6 +11,12 @@ const TableBulletPoint = ({ children }) => (
 )
 export default () => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Resume</title>
+      <link rel="canonical" href="http://www.brdsmith.com/resume " />
+      <meta name="description" content="Brad Smith's Resume" />
+    </Helmet>
     <Layout>
       <div className={resumeStyles.resumeContainer}>
         <h1>Resume</h1>
