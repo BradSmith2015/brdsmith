@@ -55,11 +55,20 @@
   flex-direction: row-reverse;
 }
 @media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
   .projectPostContainer {
     flex-direction: column;
     margin: auto;
     margin-bottom: 50px;
+    .projectInfo {
+      width: 80%;
+    }
+
     .imgStyles {
+      width: 80vw;
+      height: auto;
       margin: auto;
     }
     .projectInfo {

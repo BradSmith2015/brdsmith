@@ -22,3 +22,12 @@
     }
   }
 }
+@media only screen and (max-width: 500px) {
+  .resumeContainer {
+    table {
+      td {
+        font-size: 15px;
+      }
+    }
+  }
+}

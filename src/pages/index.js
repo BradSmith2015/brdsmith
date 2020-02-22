@@ -23,36 +23,30 @@ export default ({ data }) => {
             />
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            margin: "30px",
-          }}
-        >
-          <p style={{ fontSize: "18px", width: "45%" }}>
+        <div className={indexStyles.subparagraphs}>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus.
             Sit amet mauris commodo quis imperdiet.
           </p>
-          <p style={{ fontSize: "18px", width: "45%" }}>
+          <p>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus.
             Sit amet mauris commodo quis imperdiet.
           </p>
-        </div>
-        <div>
-          <p style={{ fontSize: "18px", margin: "30px", width: "45%" }}>
+          <p>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus.
+            Sit amet mauris commodo quis imperdiet.
           </p>
         </div>
 
-        <div style={{ marginTop: "150px" }}>
+        <div style={{ marginTop: "100px" }}>
           <h1 style={{ margin: "80px 0" }}>Some of my Past Projects </h1>
           <ProjectPost />
         </div>

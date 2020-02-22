@@ -19,6 +19,17 @@
     box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
   }
 }
+.subparagraphs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  p {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 30px;
+    width: 50%;
+  }
+}
 
 @media only screen and (max-width: 870px) {
   .heroContainer {
@@ -26,5 +37,31 @@
     .heroImage {
       margin: 50px 15px;
     }
+  }
+  .subparagraphs {
+    p {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heroContainer {
+    flex-direction: column-reverse;
+    margin: 50px 0px 50px 0px;
+    .heroImage {
+      width: 80vw;
+      height: auto;
+      margin: 10px 15px;
+    }
+    .heroText {
+      h1 {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+  p {
+    margin-top: 0px;
   }
 }

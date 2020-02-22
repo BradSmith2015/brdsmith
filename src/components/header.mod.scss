@@ -57,6 +57,12 @@ h3 {
 
 @media only screen and (max-width: 500px) {
   .headerLinks {
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 12px;
+    }
     width: 100%;
   }
 }
