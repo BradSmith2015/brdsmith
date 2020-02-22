@@ -1,45 +1,77 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { graphql, useStaticQuery } from "gatsby"
 import projectPostStyles from "./projectPost.mod.scss"
+import Img from "gatsby-image"
 
-export default ({
-  projectTitle,
-  projectUrl,
-  projectImage,
-  projectDescription,
-  isOnLeft,
-  techUsed,
-}) => {
-  console.log(techUsed)
-  return (
-    <div
-      className={
-        projectPostStyles.projectPostContainer +
-        (isOnLeft ? " " + projectPostStyles.left : "")
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              url
+              path
+              postType
+              title
+              description
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 900) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+              tech
+            }
+          }
+        }
       }
-    >
-      <img src={projectImage} />
-      <div className={projectPostStyles.projectInfo}>
-        <h1>{projectTitle}</h1>
-        <p>{projectDescription}</p>
+    }
+  `)
+  let isLeft = true
+  return (
+    <div>
+      {data.allMarkdownRemark.edges.map(({ node }) => {
+        isLeft = !isLeft
+        return (
+          <div
+            className={
+              projectPostStyles.projectPostContainer +
+              (isLeft ? " " + projectPostStyles.left : "")
+            }
+          >
+            <Img
+              className={projectPostStyles.imgStyles}
+              fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+            />
+            <div className={projectPostStyles.projectInfo}>
+              <h1>{node.frontmatter.title}</h1>
+              <p>{node.frontmatter.description}</p>
 
-        <h4>Technology Used</h4>
-        <div>
-          {techUsed.map(tech => {
-            console.log(tech.fontAwesomeIcon)
-            return (
-              <FontAwesomeIcon
-                style={{ margin: "5px" }}
-                icon={["fab", tech.fontAwesomeIcon]}
-              />
-            )
-          })}
-        </div>
-        <br />
-        <h5>
-          VIEW PROJECT <span> › </span>
-        </h5>
-      </div>
+              <h4>Technology Used</h4>
+              <div>
+                {node.frontmatter.tech.map(techs => {
+                  return (
+                    <FontAwesomeIcon
+                      style={{ margin: "5px" }}
+                      icon={["fab", techs]}
+                    />
+                  )
+                })}
+              </div>
+              <br />
+              <a href={node.frontmatter.url}>
+                <h5>
+                  VIEW PROJECT <span> › </span>
+                </h5>
+              </a>
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }

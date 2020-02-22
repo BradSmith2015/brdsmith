@@ -2,7 +2,7 @@
   "projectTitle": "Will It Trend? ",
   "projectUrl": "www.url.com",
   "position": 4,
-  "projectImage": "/images/WillItTrend.png",
+  "projectImage": "WillItTrend.png",
   "projectDescription": "Designed a machine learning algorithm with Keras to determine if a video will hit the trending tab on YouTube with a R^2  score of 0.82 ",
   "techUsed": [
     {

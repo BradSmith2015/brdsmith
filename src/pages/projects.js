@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 import ProjectPost from "../components/projectPost"
-import { graphql } from "gatsby"
 
 export default ({ data }) => {
   let isLeft = true
@@ -12,30 +12,8 @@ export default ({ data }) => {
           {"Here are some of my"}
           <br /> {"Past Projects"}
         </h1>
-        {data.allProjectsJson.edges.map(({ node }) => {
-          isLeft = !isLeft
-          return <ProjectPost key={node.id} isOnLeft={isLeft} {...node} />
-        })}
+        <ProjectPost />
       </Layout>
     </div>
   )
 }
-
-export const query = graphql`
-  {
-    allProjectsJson(sort: { fields: position }) {
-      edges {
-        node {
-          id
-          projectDescription
-          projectImage
-          projectTitle
-          projectUrl
-          techUsed {
-            fontAwesomeIcon
-          }
-        }
-      }
-    }
-  }
-`

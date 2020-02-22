@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import ProjectPost from "../components/projectPost"
 import indexStyles from "../styles/index.mod.scss"
+import Img from "gatsby-image"
+import { graphql } from "gatsby"
 
 export default ({ data }) => {
-  let isLeft = true
-
   return (
     <div>
       <Layout>
@@ -17,7 +17,10 @@ export default ({ data }) => {
             </h1>
           </div>
           <div className={indexStyles.heroText}>
-            <img src={"/images/Me.png"} className={indexStyles.heroImage} />
+            <Img
+              className={indexStyles.heroImage}
+              fluid={data.file.childImageSharp.fluid}
+            />
           </div>
         </div>
         <div
@@ -51,10 +54,7 @@ export default ({ data }) => {
 
         <div style={{ marginTop: "150px" }}>
           <h1 style={{ margin: "80px 0" }}>Some of my Past Projects </h1>
-          {data.allProjectsJson.edges.map(({ node }) => {
-            isLeft = !isLeft
-            return <ProjectPost key={node.id} isOnLeft={isLeft} {...node} />
-          })}
+          <ProjectPost />
         </div>
       </Layout>
     </div>
@@ -62,18 +62,11 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  {
-    allProjectsJson(sort: { fields: position }) {
-      edges {
-        node {
-          id
-          projectDescription
-          projectImage
-          projectTitle
-          projectUrl
-          techUsed {
-            fontAwesomeIcon
-          }
+  query {
+    file(relativePath: { eq: "Me.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

@@ -1,7 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import aboutStyles from "../styles/about.mod.scss"
-export default () => (
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+export default ({ data }) => (
   <div>
     <Layout>
       <div className={aboutStyles.AboutHeroContainer}>
@@ -16,9 +18,26 @@ export default () => (
           </p>
         </div>
         <div className={aboutStyles.col}>
-          <img src={"/images/Me.png"} />
+          <div>
+            <Img
+              className={aboutStyles.imgStyles}
+              fluid={data.file.childImageSharp.fluid}
+            />
+          </div>
         </div>
       </div>
     </Layout>
   </div>
 )
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "Me.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`

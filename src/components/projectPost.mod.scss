@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  img {
+  .imgStyles {
     width: 450px;
     height: 350px;
     border: solid 3px black;
@@ -13,6 +13,7 @@
   }
 
   .projectInfo {
+    width: 50%;
     padding: 20px 40px;
     text-align: left;
     p {
@@ -40,7 +41,7 @@
   }
 }
 .projectPostContainer:hover {
-  img {
+  .imgStyles {
     transform: translate(-10px, -10px);
     -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
     -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
@@ -58,8 +59,12 @@
     flex-direction: column;
     margin: auto;
     margin-bottom: 50px;
-    img {
+    .imgStyles {
       margin: auto;
+    }
+    .projectInfo {
+      margin: auto;
+      width: 100%;
     }
   }
 }

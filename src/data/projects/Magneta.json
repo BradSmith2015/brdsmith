@@ -2,7 +2,7 @@
   "projectTitle": "Magneta",
   "position": 1,
   "projectUrl": "https://magenta.xyz",
-  "projectImage": "/images/magnetaThumb.png",
+  "projectImage": "magnetaThumb.png",
   "projectDescription": "Developed a web app that allowed marketers to efficiently track and manage there influencer campaigns",
   "techUsed": [
     {
