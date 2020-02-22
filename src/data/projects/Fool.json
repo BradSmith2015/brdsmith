@@ -1,0 +1,14 @@
+{
+  "projectTitle": "Fool",
+  "projectUrl": "www.url.com",
+  "position": 3,
+  "projectImage": "/images/Fool.png",
+  "projectDescription": "Created and developed web app that allows users to rate jokes and receive joke recommendations based on those ratings. Model for the recommendations utilized a kNN algorithm through Lenskit that was trained using a UC - Berkeley Dataset",
+  "techUsed": [
+    { "name": "React", "fontAwesomeIcon": "react" },
+    {
+      "name": "Python",
+      "fontAwesomeIcon": "python"
+    }
+  ]
+}

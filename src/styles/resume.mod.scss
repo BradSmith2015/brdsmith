@@ -1,0 +1,24 @@
+.resumeContainer {
+  padding-left: 30px;
+  h2 {
+    font-weight: 700;
+
+    display: inline;
+    margin: 0px 0px 0px 0px;
+  }
+  h4 {
+    font-weight: 500;
+    color: rgb(27, 26, 34);
+    margin: 20px 0px 10px 0px;
+  }
+  table {
+    td {
+      border: none;
+      font-weight: 900;
+      span {
+        color: #f46b45;
+        font-weight: 800;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.heroContainer {
+  display: flex;
+  margin-top: 50px;
+  .heroText {
+    vertical-align: middle;
+    margin: auto;
+    h1 {
+      margin: 10px 15px;
+    }
+  }
+  .heroImage {
+    float: right;
+    background: linear-gradient(to right, #f46b45, #eea849);
+    border: solid 3px black;
+    width: auto;
+    height: 300px;
+    -moz-box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    -webkit-box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+    box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .heroContainer {
+    flex-direction: column-reverse;
+    .heroImage {
+      margin: 50px 15px;
+    }
+  }
+}
