@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import Skills from "../components/skills"
 import resumeStyles from "../styles/resume.mod.scss"
 import { Helmet } from "react-helmet"
 
@@ -39,18 +40,7 @@ export default () => (
         </div>
         <div>
           <h2>Skills</h2>
-          <table>
-            <tr>
-              <TableBulletPoint> React.js</TableBulletPoint>
-              <TableBulletPoint> Javascript</TableBulletPoint>
-              <TableBulletPoint> HTML/CSS</TableBulletPoint>
-            </tr>
-            <tr>
-              <TableBulletPoint> Node.js</TableBulletPoint>
-              <TableBulletPoint> Java</TableBulletPoint>
-              <TableBulletPoint> Python</TableBulletPoint>
-            </tr>
-          </table>
+          <Skills />
         </div>
       </div>
     </Layout>

@@ -11,23 +11,4 @@
     color: rgb(27, 26, 34);
     margin: 20px 0px 10px 0px;
   }
-  table {
-    td {
-      border: none;
-      font-weight: 900;
-      span {
-        color: #f46b45;
-        font-weight: 800;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  .resumeContainer {
-    table {
-      td {
-        font-size: 15px;
-      }
-    }
-  }
 }

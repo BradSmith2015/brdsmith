@@ -5,13 +5,14 @@ import indexStyles from "../styles/index.mod.scss"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import Skills from "../components/skills"
 
 export default ({ data }) => {
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Home</title>
+        <title htmlAttributes={[{ lang: "en" }]}>Home</title>
         <link rel="canonical" href="http://www.brdsmith.com " />
       </Helmet>
       <Layout>
@@ -19,7 +20,7 @@ export default ({ data }) => {
           <div className={indexStyles.heroText}>
             <h1 style={{ fontWeight: 900, lineHeight: "60px" }}>
               Hello there! I'm Brad - <br />
-              I'm a Software Engineer
+              I'm a Software Developer
             </h1>
           </div>
           <div className={indexStyles.heroText}>
@@ -31,25 +32,24 @@ export default ({ data }) => {
         </div>
         <div className={indexStyles.subparagraphs}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus.
-            Sit amet mauris commodo quis imperdiet.
+            I'm a 22 year old software developer. I graduated form the
+            University of Colorado - Boulder (Sko Buffs!) with a B.S. in
+            Computer Science in May of 2019.
           </p>
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus.
-            Sit amet mauris commodo quis imperdiet.
+            I have also explored many different areas of software development
+            such as Data visualization in D3.js, machine learning in Python
+            (Keras/sci-kit learn) , recommender systems(lenskit). Also over the
+            past year have been attempting learning the basic of UI/UX design.
           </p>
           <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus.
-            Sit amet mauris commodo quis imperdiet.
+            I have spent the last 3 years focusing on web development, writing
+            mostly in React.js and Node.js.
           </p>
+        </div>
+        <div style={{ marginTop: "100px" }}>
+          <h1>My Skills</h1>
+          <Skills />
         </div>
 
         <div style={{ marginTop: "100px" }}>
