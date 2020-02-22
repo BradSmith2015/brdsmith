@@ -7,6 +7,7 @@ fairyGatesTheme.overrideStyles = () => ({
   },
   a: {
     textDecoration: "none",
+    color: "black",
   },
 })
 const typography = new Typography(fairyGatesTheme)

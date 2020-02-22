@@ -37,39 +37,39 @@ export default () => {
       {data.allMarkdownRemark.edges.map(({ node }) => {
         isLeft = !isLeft
         return (
-          <div
-            className={
-              projectPostStyles.projectPostContainer +
-              (isLeft ? " " + projectPostStyles.left : "")
-            }
-          >
-            <Img
-              className={projectPostStyles.imgStyles}
-              fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
-            />
-            <div className={projectPostStyles.projectInfo}>
-              <h1>{node.frontmatter.title}</h1>
-              <p>{node.frontmatter.description}</p>
+          <a href={node.frontmatter.url}>
+            <div
+              className={
+                projectPostStyles.projectPostContainer +
+                (isLeft ? " " + projectPostStyles.left : "")
+              }
+            >
+              <Img
+                className={projectPostStyles.imgStyles}
+                fluid={node.frontmatter.featuredImage.childImageSharp.fluid}
+              />
+              <div className={projectPostStyles.projectInfo}>
+                <h1>{node.frontmatter.title}</h1>
+                <p>{node.frontmatter.description}</p>
 
-              <h4>Technology Used</h4>
-              <div>
-                {node.frontmatter.tech.map(techs => {
-                  return (
-                    <FontAwesomeIcon
-                      style={{ margin: "5px" }}
-                      icon={["fab", techs]}
-                    />
-                  )
-                })}
-              </div>
-              <br />
-              <a href={node.frontmatter.url}>
+                <h4>Technology Used</h4>
+                <div>
+                  {node.frontmatter.tech.map(techs => {
+                    return (
+                      <FontAwesomeIcon
+                        style={{ margin: "5px" }}
+                        icon={["fab", techs]}
+                      />
+                    )
+                  })}
+                </div>
+                <br />
                 <h5>
                   VIEW PROJECT <span> › </span>
                 </h5>
-              </a>
+              </div>
             </div>
-          </div>
+          </a>
         )
       })}
     </div>

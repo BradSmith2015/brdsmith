@@ -3,13 +3,6 @@ import Layout from "../components/layout"
 import Skills from "../components/skills"
 import resumeStyles from "../styles/resume.mod.scss"
 import { Helmet } from "react-helmet"
-
-const TableBulletPoint = ({ children }) => (
-  <td>
-    <span>&#x25A1;</span>
-    {children}
-  </td>
-)
 export default () => (
   <div>
     <Helmet>
@@ -22,10 +15,9 @@ export default () => (
       <div className={resumeStyles.resumeContainer}>
         <h1>Resume</h1>
         <p>
-          Designed multiple iterations of the front-end and landing page using
-          Adobe XD .Designed multiple iterations of the front-end and landing
-          page using Adobe XD. Designed multiple iterations of the front-end and
-          landing page using Adobe XD 
+          Recent Computer Science Graduate with experience in web development
+          looking for a position that provides an environment that promotes lean
+          innovation, values independence and solves interesting problems.
         </p>
         <br />
         <div>
