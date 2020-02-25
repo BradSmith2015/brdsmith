@@ -32,14 +32,14 @@ export default ({ data }) => {
         </div>
         <div className={indexStyles.subparagraphs}>
           <p>
-            I'm a 22 year old software developer. I graduated form the
+            I'm a 22-year-old software developer. I graduated from the
             University of Colorado - Boulder (Sko Buffs!) with a B.S. in
             Computer Science in May of 2019.
           </p>
           <p>
             I have also explored many different areas of software development
             such as Data visualization in D3.js, machine learning in Python
-            (Keras/sci-kit learn) , recommender systems(lenskit). Also over the
+            (Keras/sci-kit learn) , recommender systems(lenskit). Also, over the
             past year have been attempting learning the basic of UI/UX design.
           </p>
           <p>

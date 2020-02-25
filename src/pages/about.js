@@ -22,8 +22,8 @@ export default ({ data }) => (
             A <span> little</span> about me{" "}
           </h1>
           <p>
-            I am 22 year old software developer from Perryville Maryland. I
-            recently graducate form CU-Boulder, where I studied Computer
+            I am 22 year old software developer from Perryville, Maryland. I
+            recently graduated from CU-Boulder, where I studied Computer
             Science.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default ({ data }) => (
           <div className={aboutStyles.overlayText}>
             <h3>I love outdoors! </h3>
             <p>
-              I love being outdoors doing anything but I mostly enjoy limbing,
+              I love being outdoors doing anything but I mostly enjoy climbing,
               hiking, kayaking, fishing, and skeet shooting,
             </p>
           </div>
@@ -67,8 +67,8 @@ export default ({ data }) => (
           <div className={aboutStyles.overlayText}>
             <h3>I also love the indoors too! </h3>
             <p>
-              When Im not outside im usually playing Super Smash Bros, Catan, or
-              guitar.
+              When Im not outside I'm usually playing Super Smash Bros, Catan,
+              or guitar.
             </p>
           </div>
         </div>
