@@ -13,7 +13,7 @@ export default ({ data }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title htmlAttributes={[{ lang: "en" }]}>Home</title>
-        <link rel="canonical" href="http://www.brdsmith.com " />
+        <link rel="canonical" href="https://www.brdsmith.com" />
       </Helmet>
       <Layout>
         <div className={indexStyles.heroContainer}>

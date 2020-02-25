@@ -12,7 +12,7 @@ export default ({ data }) => (
     <Helmet htmlAttributes={[{ lang: "en" }]}>
       <meta charSet="utf-8" />
       <title>About</title>
-      <link rel="canonical" href="http://www.brdsmith.com/resume " />
+      <link rel="canonical" href="https://www.brdsmith.com/resume " />
       <meta name="description" content="A page about Brad Smith" />
     </Helmet>
     <Layout>

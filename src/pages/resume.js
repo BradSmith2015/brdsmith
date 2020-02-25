@@ -8,7 +8,7 @@ export default () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title htmlAttributes={[{ lang: "en" }]}>Resume</title>
-      <link rel="canonical" href="http://www.brdsmith.com/resume " />
+      <link rel="canonical" href="https://www.brdsmith.com/resume " />
       <meta name="description" content="Brad Smith's Resume" />
     </Helmet>
     <Layout>
