@@ -32,19 +32,19 @@ export default ({ data }) => {
         </div>
         <div className={indexStyles.subparagraphs}>
           <p>
-            I'm a 22-year-old software developer. I graduated from the
+            I'm a 23-year-old software developer. I graduated from the
             University of Colorado - Boulder (Sko Buffs!) with a B.S. in
-            Computer Science in May of 2019.
+            Computer Science. I am currently working at
+            <a href="http://vanguard.com/">Vanguard</a> as Software Developer.
           </p>
           <p>
             I have also explored many different areas of software development
             such as Data visualization in D3.js, machine learning in Python
-            (Keras/sci-kit learn) , recommender systems(lenskit). Also, over the
-            past year have been attempting learning the basic of UI/UX design.
+            (Keras/sci-kit learn), and recommender systems(lenskit).
           </p>
           <p>
-            I have spent the last 3 years focusing on web development, writing
-            mostly in React.js and Node.js.
+            For the past year I have been working on Vanguard's Secure Overview
+            and Holdings pages. Utilizing Angular, Node.js, Typescript, and AWS.
           </p>
         </div>
         <div style={{ marginTop: "100px" }}>

@@ -22,9 +22,8 @@ export default ({ data }) => (
             A <span> little</span> about me{" "}
           </h1>
           <p>
-            I'm a 22 year old software developer from Perryville, Maryland. I
-            recently graduated from CU-Boulder, where I studied Computer
-            Science.
+            I'm a 23 year old software developer from Perryville, Maryland.
+            Currently a Software Developer @ Vanguard.
           </p>
         </div>
         <div className={aboutStyles.col}>
