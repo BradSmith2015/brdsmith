@@ -33,9 +33,6 @@ export default () => (
       <HeaderLink to={"/resume"}>
         <h4>Resume</h4>
       </HeaderLink>
-      <HeaderLink to={"/blog"}>
-        <h4>Blog</h4>
-      </HeaderLink>
       <HeaderLink to={"/contact"}>
         <h4>Contact</h4>
       </HeaderLink>
