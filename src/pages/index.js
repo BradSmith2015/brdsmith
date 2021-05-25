@@ -35,7 +35,7 @@ export default ({ data }) => {
             I'm a 23-year-old software developer. I graduated from the
             University of Colorado - Boulder (Sko Buffs!) with a B.S. in
             Computer Science. I am currently working at
-            <a href="http://vanguard.com/">Vanguard</a> as Software Developer.
+            <a href="http://vanguard.com/"> Vanguard</a> as Software Developer.
           </p>
           <p>
             I have also explored many different areas of software development
